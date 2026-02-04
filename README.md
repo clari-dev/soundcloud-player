@@ -148,11 +148,11 @@ podman run -it \
 
 ```txt
 soundcloud-player/
-├── server.js                 # Express server with OAuth
+├── server.js                # Express server with OAuth
 ├── public/
 │   ├── index.html           # Test page
-│   ├── sc-auth.js          # Authentication component
-│   └── sc-player.js        # Player component
+│   ├── sc-auth.js           # Authentication component
+│   └── sc-player.js         # Player component
 ├── Containerfile            # Podman/Docker configuration
 ├── package.json             # Dependencies
 ├── .env.example             # Environment variables template
@@ -191,10 +191,8 @@ npm run dev
 ## Security Considerations
 
 - Client Secret is stored on the backend only
-- Access tokens are stored securely per session
 - Non-root user runs the container
 - Use HTTPS in production
-- Implement rate limiting for production use
 
 ## License
 
@@ -206,4 +204,3 @@ MIT
 - [Web Components Specification](https://www.webcomponents.org/)
 - [Express.js Documentation](https://expressjs.com/)
 - [Podman Documentation](https://podman.io/)
-- [Azure Web App Documentation](https://docs.microsoft.com/en-us/azure/app-service/)
